@@ -34,28 +34,6 @@ Type-Aware Lint Rules: The configuration uses tseslint.configs.recommendedTypeCh
 React Plugin: eslint-plugin-react is used to provide React-specific linting rules.
 Configuration Example:
 The ESLint configuration has been updated to support advanced TypeScript checks, as well as stylistic and functional React linting rules. 
-Below is a summary:
-
-js:
-// eslint.config.js
-import react from 'eslint-plugin-react';
-
-export default tseslint.config({
-  languageOptions: {
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    react,
-  },
-  rules: {
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-});
 
 Plugins and Features
 React Fast Refresh: Enabled by @vitejs/plugin-react or @vitejs/plugin-react-swc for quick feedback during development.
