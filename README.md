@@ -33,7 +33,8 @@ To maintain the highest quality standards, this project utilizes a type-aware ES
 Type-Aware Lint Rules: The configuration uses tseslint.configs.recommendedTypeChecked to enable lint rules that go beyond basic syntax checking.
 React Plugin: eslint-plugin-react is used to provide React-specific linting rules.
 Configuration Example:
-The ESLint configuration has been updated to support advanced TypeScript checks, as well as stylistic and functional React linting rules. Below is a summary:
+The ESLint configuration has been updated to support advanced TypeScript checks, as well as stylistic and functional React linting rules. 
+Below is a summary:
 
 js:
 // eslint.config.js
